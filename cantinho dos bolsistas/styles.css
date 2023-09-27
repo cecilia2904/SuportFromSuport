@@ -1,0 +1,165 @@
+/* Estilos da barra de navegação lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #C91318;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+}
+
+.sidebar.show {
+    width: 250px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    padding: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos do botão de alternância */
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #389837;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* Estilos do conteúdo principal */
+.content {
+    margin-left: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right,#A8E0B5, #3C963A);
+    padding: 200px 0;
+  }
+
+  /* Estilos para a imagem */
+/* Estilos para o container do conteúdo */
+.hero__content {
+  display: flex; /* Torna os elementos filhos flexíveis */
+  align-items: center; /* Centraliza verticalmente os elementos dentro do container */
+}
+
+/* Estilos para a imagem */
+.hero__image {
+  width: 250px; /* Largura da imagem (ajuste conforme necessário) */
+  margin-left: 8px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+}
+
+
+  
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .hero__heading {
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #fff;
+  }
+  
+  .hero__heading span {
+  color: #389837;
+  }
+  
+  .hero__description {
+    font-size: 60px;
+    background: #da22ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #9114ff,
+      #da22ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: #C21B1E; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .hero__heading {
+      font-size: 60px;
+    }
+  
+    .hero__description {
+      font-size: 40px;
+    }
+  }
+  
+
+  /* Estilos para a grade */
+  .grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 quadros na horizontal */
+    gap: 20px; /* Espaço entre os quadros */
+}
+
+/* Estilos para cada quadro */
+.item {
+    border: 1px solid #a41313;
+    padding: 20px;
+    text-align: center;
+    background-color: #389837;
+}
+
+
+/* Estilos para o título no topo */
+.titulo2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Estilos para a grade */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 quadros na horizontal */
+  gap: 20px; /* Espaço entre os quadros */
+}
+
+/* Estilos para cada quadro */
+.item2 {
+  border: 1px solid #a41313;
+  padding: 20px;
+  text-align: center;
+  background-color: #b2fcb6;
+}
+
+/* Estilos para a imagem */
+.item2 img {
+  max-width: 100%;
+  max-height: 100px; /* Ajuste a altura máxima conforme necessário */
+}
